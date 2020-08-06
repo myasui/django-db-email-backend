@@ -1,17 +1,13 @@
 language: python
 python:
-    - 2.7
-    - 3.6
+    - 3.7
 env:
-    - DJANGO=1.8
-    - DJANGO=1.9
-    - DJANGO=1.10
-    - DJANGO=1.11
-    - DJANGO=2.0
+    - DJANGO=3.1
+
 matrixs:
     exclude:
-        - python: 3.6
-          env: DJANGO=2.0
+        - python: 3.7
+          env: DJANGO=3.1
 install:
     - pip install tox-travis
 script:
